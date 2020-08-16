@@ -1,0 +1,261 @@
+/* Star Rating */
+.starRating input[type="radio"] {
+    display: none;
+}
+.starRating .star {
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+
+/* Restaurant Detail View */
+
+.upperSection {
+    position: relative;
+    min-height: 496px;
+    
+
+    .restaurantHead {
+        background: rgba(0, 0, 0, 0.5);
+        height: 204px;
+        padding: 33px 0 0 130px;
+        color: #fff;
+
+        .restaurantName {
+            font-weight: bold;
+            font-size: 30px;
+            margin-block-start: 0; 
+            margin-block-end: 0; 
+        }
+
+        .restaurantCategory {
+            font-weight: 300;
+            font-size: 24px;
+            margin-top: 13px;
+            margin-block-start: 0; 
+            margin-block-end: 0; 
+        }
+
+        .restaurantRating {
+            font-weight: 300;
+            font-size: 20px;
+            padding-left: 30px;
+            margin-top: 13px;
+            margin-block-start: 0; 
+            margin-block-end: 0; 
+        }
+    }
+    
+    /* RestInfoMapComponent */
+    .restInfoMapContainer {
+        width: 361px;
+        position: absolute;
+        top: 27px;
+        right: 131px;
+        z-index: 20;
+        background: #fff;
+        border-radius: 3px;
+
+        .mapContainer img {
+            width: 100%;
+            max-height: 167px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .restInfoMapList {
+            font-size: 20px;
+            line-height: 23px;
+            padding: 27px;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                
+                display: flex;
+                align-items: center;
+
+                svg {
+                    display: block;
+                    margin-right: 25px;
+                }
+            }
+            li:not(:last-child){
+                padding-bottom: 24px;
+            }
+        }
+    }
+}
+
+.lowerSection {
+    display: flex;
+    .reviewFeed {
+        width: 60%;
+    }
+
+
+    /* RestInfoAsideComponent*/
+
+    .info-container-rest-detail {
+        width: 40%;
+        margin-left: 22px;
+        display: flex;
+        flex-direction: column;
+
+        .rest-detail-edit-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+
+        li {
+            padding: 17px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                display: block;
+                margin-right: 25px;
+            }
+        }
+        
+        li:not(:last-child){
+            border-bottom: 1px solid $light-grey;
+        }
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ReviewPost */
+
+.post-container {
+    max-width: 650px;
+    border-radius: 3px;
+    background: #FFFFFF;
+    margin-top: 15px;
+
+    .postHeader {
+        height: 67px;
+        border: 1px solid $border-grey;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .postAvatar {
+            width: 67px;
+            height: 67px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 7px;
+
+            svg {
+            
+            display: block;
+
+            }
+        }
+
+        .username-review-text {
+            display: flex;
+            flex-direction: column;
+            padding-right: 30px;
+
+            .titleUser {
+                font-size: 20px;
+                line-height: 23px;
+                color: $orange;
+                font-weight: bold;
+            }
+    
+            .amountReviews {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .dateTimeField {
+            position: absolute;
+            top: 13px;
+            right: 9px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: right;
+        }
+        
+    }
+    .postContent {
+        padding: 9px;
+
+        .content {
+            margin-bottom: 15px;
+        }
+
+        .comments-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            input {
+                border: 1px solid $border-grey;
+                height: 30px;
+                flex-grow: 1;
+            }
+
+            .btn {
+                height: 30px;
+                margin-left: 15px;
+            }
+
+            .error {
+                color: $red;
+                opacity: 0;
+            }
+        }
+    }
+    
+}
+
+
+
+.button-container {
+    display: flex;
+
+    svg{
+        margin-right: 6px;
+    }
+}
+
+.post-interactive-footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+.toggle-all-comments {
+    color: $orange;
+    cursor: pointer;
+}
+
+.comment {
+    .comment-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .comment-user {
+        color: $orange;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,57 @@
+.site-header {
+    padding: 0px 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-logo {
+        height: 60px;
+        padding: 13px;
+    }
+
+    .main-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & > a {
+            margin-right: 60px;
+            padding: 30px 0px;
+            border-bottom: solid #fff 3px;
+        }
+
+        & > a.active {
+            border-bottom: solid $orange 3px;
+            font-weight: bold;
+        }
+
+        .log-in-buttons {
+            display: flex;
+        }
+
+        .button-header {
+            background: $orange;
+            height: 40px;
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-transform: uppercase;
+            border: none;
+
+            &:first-child {
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-right: 1px solid #fff;
+            }
+            &:last-child {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+    }
+}

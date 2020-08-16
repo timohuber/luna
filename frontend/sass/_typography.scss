@@ -1,0 +1,42 @@
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $font_color;
+    font-size: $base-font-size;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    color: $font_color;
+}
+
+.smaller {
+    font-size: rem(14px)
+}
+
+.page-title-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:after {
+        content: '';
+        display: blocK;
+        height: 3px;
+        width: 80%;
+        background-color: $orange;
+        margin: auto;
+        margin-top: 10px;
+    }
+}

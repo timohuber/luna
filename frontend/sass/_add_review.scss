@@ -1,0 +1,61 @@
+#add-review {
+    display: flex;
+    flex-direction: column;
+    padding: 57px 0;
+    height: 668px;
+
+    .star-rating-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .form-review-wrapper {
+        .star-rating-div {
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            .star {
+                width: 30px;
+                height: 30px;
+            
+            }
+            span {
+                padding-left: 20px;
+                padding-bottom: 10px;
+            }
+        }
+        .textarea-wrapper {
+
+
+            textarea {
+                height: auto;
+                min-height: 250px;
+                background: #FFFFFF;
+                border: 1px solid #E3E3E3;
+                border-radius: 3px;
+                outline: none;
+                resize: none;
+                overflow: auto;
+                font-family: 'Roboto', sans-serif;
+                padding: 21px 18px;
+                color: $font_color;
+            }
+            .error {
+                font-size: 16px;
+                text-align: left;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+    .btn {
+        align-self: flex-end;
+        width: 200px;
+    }
+
+    .error {
+        opacity: 0;
+        text-align: left;
+    }
+}

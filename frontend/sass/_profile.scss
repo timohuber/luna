@@ -1,0 +1,107 @@
+.profile-banner {
+    height: 200px;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+
+    .profile-navigation-container {
+        width: 230px;
+        border-right: 1px solid $border-grey;
+        transform: translateY(-110px)
+    }
+
+    .profile-about-container {
+        width: 300px;
+        padding: 25px 15px 15px 15px;
+    }
+
+    .profile-center-container {
+        flex-grow: 1;
+        background-color: #fff;
+        padding: 25px 15px 15px 15px;
+    }
+
+    .profile-subtitle {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .profile-about-subtitle {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .profile-navigation-title {
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .profile-navigation > a {
+        padding: 10px 10px 10px 60px;
+        display: block;
+        border-bottom: 1px solid $form-input-color;
+        transition: 0.2s;
+        position: relative;
+        
+        &:first-child {
+            border-top: 1px solid $form-input-color;
+        }
+
+        &:hover, &.active {
+            background-color: $light-grey;
+        }
+
+        img {
+            height: 30px;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+    }
+
+    .profile-avatar {
+        width: 100%;
+        padding-top: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+#edit-profile-form {
+    input {
+        border: 1px solid $border-grey;
+    }
+
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .button-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .btn {
+            width: 200px;
+        }
+    }
+
+    .error {
+        opacity: 0;
+    }
+}
+
+.profile-center-container .restaurant {
+    margin-bottom: 30px;
+}

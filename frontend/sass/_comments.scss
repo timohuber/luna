@@ -1,0 +1,11 @@
+.comment {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $border-grey;
+    
+    .comment-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,96 @@
+
+input, select,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+input {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: $form-input-color;
+    padding: 10px 15px;
+}
+
+label {
+    font-size: $base-font-size;
+    color: $form-input-color;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label.btn {
+    height: 43px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+form .error {
+    font-size: rem(16px);
+    color: #B00000;
+    text-align: center;
+}
+
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 400px;
+    max-width: 100%;
+    align-items: center;
+
+    & > input {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    #submit-login {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    #login-error {
+        height: 40px;
+    }
+}
+
+#verification-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .register-validation {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .input-wrapper {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .error {
+        text-align: left;
+        margin-top: 10px;
+        opacity: 0;
+    }
+    #submit-verification {
+        width: fit-content;
+        padding: 15px 30px;
+        align-self: center;
+    }
+}

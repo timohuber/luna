@@ -1,0 +1,38 @@
+#create-restaurant-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .form-subtitle {
+        width: 100%;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-wrapper {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .input-wrapper {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .error {
+        text-align: left;
+        margin-top: 10px;
+        opacity: 0;
+    }
+
+    select {
+        height: 43px;
+        padding: 5px;
+        font-size: $base-font-size;
+        color: $font_color;
+    }
+}
+
